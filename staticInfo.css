@@ -1,0 +1,45 @@
+.staticInfoContainer
+{
+	text-align:center;
+	width:20vw;
+	color: white;
+	border: 0.25vw solid white;
+	margin-left:1vw;
+}
+
+.totalMoneyContainer,.currentRoundContainer,.inventoryTitle
+{
+	width:95%;
+	height:3.5vw;
+	margin: 0.25vw;
+	text-align:left;
+	font-size:1.5vw;
+}
+.inventoryContainer
+{
+	width:95%;
+	margin: 0.25vw;
+}
+.inventoryTitle
+{
+	height:2.5vw;
+	text-align:center;
+}
+.itemsInInventory,.maxCapacityOutput
+{
+	text-align:center;
+	width:95%;
+	margin: 0.25vw;
+	font-size:1.5vw;
+	padding:.2vw;
+}
+.itemsInInventory
+{
+	text-align:left;
+	background-color:white;
+	color:black;
+}
+.inventory
+{
+	width:100%;
+}

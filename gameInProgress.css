@@ -1,0 +1,84 @@
+div
+{
+	display:inline-block;
+	
+	vertical-align:top;
+	position:relative;
+}
+.gameInProgress
+{
+	width:75vw;	
+	text-align:center;
+	display:none;
+	border: 0.25vw solid white;
+}
+.lockDigitsContainer
+{
+	width:95%;
+	margin:2.5%;
+	
+}
+.lockDigits
+{
+	width:9%;
+	height:4.5vw;
+	margin:.3vw;
+	font-size:3vw;
+	text-align:center;
+	background-color:white;
+}
+.numpadContainer
+{
+	width:30%;
+	height:15vw;
+	margin-bottom:2.5%;
+}
+.numpadDigits
+{
+	width:27%;
+	height:27%;
+	margin:2%;
+	font-size:2.5vw;
+}
+.buttonContainer
+{
+	width:95%;
+	margin-bottom:2.5%;
+}
+.lockButtons
+{
+	height:3vw;
+	width:10%;
+	font-size:1.5vw;
+	margin:.5vw;
+}
+.timeContainer
+{
+	width:95%;
+	text-align:left;
+	height:3.5vw;
+	margin: 1.5% 2.5% 0% 2.5%;
+	font-size:1.5vw;
+	background-color:white;
+}
+.messageBoxContainer
+{
+	width:30%;
+	height:8vw;
+	font-size:1.3vw;
+	overflow-wrap: break-word;
+	padding:0.35vw;
+	background-color:white;
+	margin-bottom:2vw;
+}
+
+#gameOver_Container
+{
+	width:99%;
+	position:relative;
+	top:20vw;
+	font-size:4vw;
+	text-align:center;
+	color:white;
+	border:.25vw solid white;
+}

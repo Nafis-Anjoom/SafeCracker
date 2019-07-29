@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "gameInProgress.css" />
+		<link rel = "stylesheet" type = "text/css" href = "staticInfo.css" />
+		<link rel = "stylesheet" type = "text/css" href = "itemMenu.css" />
+		<style>
+			
+		</style>
+		<script src = "functions.js"></script>
+		
+	</head>
+	
+	
+	<body onload = "initialize();">
+		<div id = "gameInProgress_container" class = "gameInProgress">
+			<div class = "timeContainer">
+			TIME REMAINING:
+			<span id = "timeOutput">0</span>
+			</div>
+			<div id = "lockDigitsContainer" class = "lockDigitsContainer">
+				
+				
+			</div>
+			<div id = "numpadContainer" class = "numpadContainer">
+				
+			</div>
+			
+			<div class = "buttonContainer">
+				<button onclick = "submitUserInput();" class = "lockButtons">SUBMIT</button>
+				<button onclick = "resetUserInput();" class = "lockButtons">RESET</button>
+			</div>
+			<div id = "messageBoxContainer" class = "messageBoxContainer"></div>
+		
+		</div>
+		
+		<div id = "itemMenu_container" class = "itemMenu_container">
+			<div class = "itemMenu_title">SAFECRACKER STORE</div>
+			<div class = "allItems_container">
+				<div class = "allItems_title">ITEMS</div>
+				<div onclick = "getItem(LOCKPICK)" onmouseover = "showItemDescription(LOCKPICK);"  onmouseout = "hideItemDescrption();" class = "items">LOCKPICK</div>
+				<div onclick = "getItem(DYNAMITE)" onmouseover = "showItemDescription(DYNAMITE);"  onmouseout = "hideItemDescrption();" class = "items">DYNAMITE</div>
+				<div onclick = "getItem(LAWYER)" onmouseover = "showItemDescription(LAWYER);"  onmouseout = "hideItemDescrption();" class = "items">LAWYER</div>
+				<div onclick = "getItem(SMALL_BAG)" onmouseover = "showItemDescription(SMALL_BAG);"  onmouseout = "hideItemDescrption();" class = "items">SMALL BAG</div>
+				<div onclick = "getItem(MEDIUM_BAG)" onmouseover = "showItemDescription(MEDIUM_BAG);"  onmouseout = "hideItemDescrption();" class = "items">MEDIUM BAG</div>
+				<div onclick = "getItem(LARGE_BAG)" onmouseover = "showItemDescription(LARGE_BAG);"  onmouseout = "hideItemDescrption();" class = "items">LARGE BAG</div>
+				<div onclick = "getItem(MAGNET)" onmouseover = "showItemDescription(MAGNET);"  onmouseout = "hideItemDescrption();" class = "items">MAGNET</div>
+				<div onclick = "getItem(STEALTH_SUIT)" onmouseover = "showItemDescription(STEALTH_SUIT);"  onmouseout = "hideItemDescrption();" class = "items">STEALTH SUIT</div>
+				<div onclick = "getItem(HENCHMAN)" onmouseover = "showItemDescription(HENCHMAN);"  onmouseout = "hideItemDescrption();" class = "items">HENCHMAN</div>
+			</div>
+			
+			<div id = "itemDescription_container" class = "itemDescription_container">
+				<div id = "itemPrice" class = "itemPrice_container">PRICE:$<span>0</span></div>
+				<div id = "itemDescription" class = "itemDescription">A Henchman will hold off the police while a safecracker continues to work on the safe.  A henchman can last anywhere from 1 - 6 turns against the police (generated at the start of the battle), giving the player that many more chances to crack the safe (the seconds on the clock no longer matter).  After those turns are up the henchman surrenders and is hauled away.  The Henchman will begin battling police as soon as the 3 turn grace period is up and the countdown to each henchman's surrender will begin.  If the player has more than one henchman in a bag, they will fight police separately so that only one will be captured at a time.  Once all of the henchmen are gone, the player is arrested.</div>
+			</div>
+			
+			<div id = "storeMessage" class = "storeMessageBox_container"></div>
+			<div class = "proceedBtn_container"><button onclick = "runRound();" class = "proceedBtn">PROCEED</button></div>
+		</div>
+		
+		
+		<div id = "staticInfoContainer" class = "staticInfoContainer"> <!-- contains information like inventory, balance and current Round -->
+			<div class = "totalMoneyContainer">
+				BALANCE:$<span id = "totalMoneyOutput">0</span>
+			</div>
+			<div class  = "currentRoundContainer">
+				ROUND:<span id = "currentRoundOutput">1</span>
+			</div>
+			<div id = "inventoryContainer" class = "inventoryContainer">
+				<div class = "inventoryTitle">INVENTORY</div>
+				<div class = "inventory" id = "inventory"></div>
+			</div>
+			<div class = "maxCapacityOutput">MAX CAPACITY:<span id = "maxCapacity" >1</span></div>
+		
+		</div>
+		<div id = "gameOver_Container">
+		GAME OVER<br/>
+		<h3>Final Score:<span id = "finalScore">0</span></h3>
+		</div>
+	
+	</body>
+</html>
